@@ -8,6 +8,8 @@ ENV PATH="/go/bin:${PATH}"
 
 RUN apt-get update
 
+RUN go install github.com/go-delve/delve/cmd/dlv@latest
+
 # Inicializando o módulo
 #RUN go mod init celsopires/learning-golang 
 
